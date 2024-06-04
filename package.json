@@ -1,0 +1,15 @@
+{
+  "name": "clone-wetube",
+  "version": "1.0.0",
+  "description": "Clone wetube",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seunghyeokleeme/clone-wetube.git"
+  },
+  "author": "Seunghyeok Lee<seunghyeok.tech@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seunghyeokleeme/clone-wetube/issues"
+  }
+}
