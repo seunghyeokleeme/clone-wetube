@@ -8,9 +8,9 @@ import {
 
 const userRouter = express.Router();
 
+userRouter.get('/:id(\\d+)', user);
 userRouter.get('/logout', logout);
 userRouter.get('/edit', edit);
 userRouter.get('/delete', remove);
-userRouter.get('/:id', user);
 
 export default userRouter;
