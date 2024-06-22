@@ -1,19 +1,22 @@
 import express from 'express';
+import morgan from 'morgan';
 
 const PORT = 4000;
 const app = express();
 
-const getHome = (req, res) => {
-  return res.send('Home!');
+const logger = morgan('dev');
+
+const home = (req, res, next) => {
+  return res.send('home');
 };
 
-app.get('/', getHome);
-
-const getLogin = (req, res) => {
+const login = (req, res, next) => {
   return res.send('login');
 };
 
-app.get('/login', getLogin);
+app.use(logger);
+app.get('/', home);
+app.get('/login', login);
 
 const handleListening = () =>
   console.log(`✅ Server listening on http://localhost:${PORT}`);

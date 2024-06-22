@@ -15,7 +15,8 @@
     "url": "https://github.com/seunghyeokleeme/clone-wetube/issues"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
